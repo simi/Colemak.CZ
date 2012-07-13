@@ -1,0 +1,71 @@
+// Colemak, Czech mutation
+// David Kolibac (david@kolibac.cz)
+// version 0.3 (13. 7. 2012)
+
+// it's FREE but WITHOUT any WARRANTY
+// the original Colemak is public domain, see http://colemak.com/wiki/index.php?title=License
+// for the Czech modification, see http://sam.zoy.org/wtfpl/
+
+default
+partial alphanumeric_keys modifier_keys 
+xkb_symbols "basic" {
+    name[Group1]= "Czech (Colemak)";
+
+    // Alphanumeric section
+    key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,        EuroSign,         sterling ] }; // OK (changed)
+    key <AE05> { [            5,      percent,            cent,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,          endash,           emdash ] }; // OK? (by design)
+    key <AE12> { [        equal,         plus,        multiply,         division ] }; // OK? (by design)
+
+    key <AD01> { [            q,            Q,      adiaeresis,       Adiaeresis ] }; // free
+    key <AD02> { [            w,            W,           aring,            Aring ] }; // free
+    key <AD03> { [            f,            F,          ecaron,           Ecaron ] }; // OK (changed)
+    key <AD04> { [            p,            P,          oslash,         Ooblique ] }; // free
+    key <AD05> { [            g,            G,     dead_ogonek,       asciitilde ] }; // free
+    key <AD06> { [            j,            J,         dstroke,          Dstroke ] }; // free
+    key <AD07> { [            l,            L,          lcaron,           Lcaron ] }; // OK (changed)
+    key <AD08> { [            u,            U,          uacute,           Uacute ] }; // OK (by design)
+    key <AD09> { [            y,            Y,          yacute,           Yacute ] }; // OK (changed)
+    key <AD10> { [    semicolon,        colon,      odiaeresis,       Odiaeresis ] }; // free?
+    key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] }; // free?
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] }; // free?
+    key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] }; // free
+
+    key <AC01> { [            a,            A,             aacute,                   Aacute ] }; // OK (by design)
+    key <AC02> { [            r,            R,             rcaron,                   Rcaron ] }; // OK (changed)
+    key <AC03> { [            s,            S,             scaron,                   Scaron ] }; // OK (changed)
+    key <AC04> { [            t,            T,             tcaron,                   Tcaron ] }; // OK (changed)
+    key <AC05> { [            d,            D,             dcaron,                   Dcaron ] }; // OK (changed)
+    key <AC06> { [            h,            H,         dead_caron,               asciitilde ] }; // free?
+    key <AC07> { [            n,            N,             ncaron,                   Ncaron ] }; // OK (changed)
+    key <AC08> { [            e,            E,             eacute,                   Eacute ] }; // OK (by design)
+    key <AC09> { [            i,            I,             iacute,                   Iacute ] }; // OK (by design)
+    key <AC10> { [            o,            O,             oacute,                   Oacute ] }; // OK (by design)
+    key <AC11> { [   apostrophe,     quotedbl, doublelowquotemark,      leftdoublequotemark ] }; // OK (changed)
+
+    key <AB01> { [            z,            Z,          zcaron,           Zcaron ] }; // OK (changed)
+    key <AB02> { [            x,            X, dead_circumflex,       asciitilde ] }; // free
+    key <AB03> { [            c,            C,          ccaron,           Ccaron ] }; // OK (changed)
+    key <AB04> { [            v,            V,           uring,            Uring ] }; // OK (changed)
+    key <AB05> { [            b,            B,          ssharp,       asciitilde ] }; // OK/free (changed)
+    key <AB06> { [            k,            K,  dead_abovering,       asciitilde ] }; // free
+    key <AB07> { [            m,            M,     dead_macron,       asciitilde ] }; // free
+    key <AB08> { [        comma,         less,    dead_cedilla,       asciitilde ] }; // free
+    key <AB09> { [       period,      greater,        ellipsis,       asciitilde ] }; // OK/free (changed)
+    key <AB10> { [        slash,     question,    questiondown,       asciitilde ] }; // free
+
+    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] }; // OK (by design)
+    key <LSGT> { [   dead_acute,   dead_caron,  dead_abovering,   dead_diaeresis ] }; // OK (changed)
+    key <SPCE> { [        space,        space,    nobreakspace,        thinspace ] }; // OK (changed)
+
+    include "level3(ralt_switch)"
+};
