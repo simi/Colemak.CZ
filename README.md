@@ -1,6 +1,8 @@
-% Colemak, Czech mod (README)
-% David Kolibac (david@kolibac.cz)
-% 13. 7. 2012
+<!--
+  Colemak, Czech mod (README)
+  David Kolibac (david@kolibac.cz)
+  13. 7. 2012
+-->
 
 ## Introduction
 
